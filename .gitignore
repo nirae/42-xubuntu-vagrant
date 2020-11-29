@@ -1,0 +1,5 @@
+packer_cache
+.vagrant
+xubuntu-amd64-virtualbox.box
+vm
+test

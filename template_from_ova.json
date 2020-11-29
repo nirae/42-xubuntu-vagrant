@@ -1,0 +1,24 @@
+{
+  "builders": [
+    {
+      "name": "amd64-virtualbox",
+      "type": "virtualbox-ovf",
+      "source_path": "xubuntu-42.ova",
+      "checksum": "60a6729821dfbaaf1b2c0289d2700c9b",
+      "guest_additions_mode": "disable",
+      "checksum_type": "md5",
+      "ssh_username": "user42",
+      "ssh_password": "user42",
+      "shutdown_command": "echo 'user42' | sudo -S shutdown -P now"
+    }
+  ],
+
+  "post-processors": [
+    {
+      "type": "vagrant",
+      "output": "xubuntu-{{.BuildName}}.box",
+      "vagrantfile_template": "./Vagrantfile",
+      "compression_level": 9
+    }
+  ]
+}
