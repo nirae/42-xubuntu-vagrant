@@ -1,5 +1,5 @@
 export DEBIAN_FRONTEND=noninteractive
-sudo apt-get update -y && apt-get upgrade -y
+# sudo apt-get update -y && apt-get upgrade -y
 
 # XFCE autologin
 echo '[Seat:*]' >> /etc/lightdm/lightdm.conf
@@ -12,5 +12,7 @@ usermod -a -G vboxsf user42
 
 sudo rm -f /home/user42/.zsh_history
 
-apt-get clean -y
-apt-get autoremove --purge -y
+
+
+# apt-get clean -y
+# apt-get autoremove --purge -y
