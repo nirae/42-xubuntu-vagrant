@@ -1,8 +1,5 @@
 # 42 xubuntu correction VM on Vagrant
 
-![actions](https://github.com/nirae/42-xubuntu-vagrant/workflows/Build/badge.svg)
-
-
 This vagrant box is based on the official 42 xubuntu VirtualBox VM. It support X11 forwarding
 
 ![screenshot](images/screenshot.png)
